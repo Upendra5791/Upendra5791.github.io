@@ -1,9 +1,5 @@
 
 
-/*
-Author: XpeedStudio
-Author URI: http://themeforest.net/user/XpeedStudio/portfolio
-*/
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -762,7 +758,7 @@ textarea::-ms-input-placeholder
 }
 .main-footer .social a{
     color:#c3bec2;
-    font-size:15px;
+    font-size:30px;
 }
 .main-footer .social a:hover{
     color:#ff2b4a;
