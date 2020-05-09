@@ -542,6 +542,9 @@ textarea::-ms-input-placeholder
     width: 60%;
     margin: 0 auto;
 }
+.about-photo img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
 /*For Features Section*/
 .features-bg{

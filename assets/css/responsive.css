@@ -122,6 +122,13 @@
 	.cd-header {
     top: 3%;
 	}
+	.contact-details p {
+	font-size: 14px;
+	line-height: 1.2;
+	}	
+	#main-nav li a {
+	font-size: 2rem;
+	}
 
 }
 
@@ -144,8 +151,11 @@
 	}
 	.skills-container .bar .title {
 	padding: 7px 0;
-	font-size: 13px;
-	width: 75px;
+	font-size: 12px;
+	width: 80px;
+	}
+	.skills-container .bar span {
+	font-size: 14px;
 	}
 }
 
