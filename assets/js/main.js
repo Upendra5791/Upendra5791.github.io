@@ -6,7 +6,15 @@ jQuery(document).ready(function ($) {
 	$(window).load(function () {
 		$(".loaded").fadeOut();
 		$(".preloader").delay(1000).fadeOut("slow");
-	});
+    });
+    
+    $(document).on('scroll', function (event) {
+        const percVal = window.scrollY/800;
+        const scaleVal = 2 * percVal + 1;
+        $('.home-content').css('transform', `scale(${scaleVal})`);
+    });       
+
+
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/

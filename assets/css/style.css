@@ -24,7 +24,7 @@ PRE LOADER
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fefefe;
+    background-color: #000;
     z-index: 99999;
     height: 100%;
     width: 100%;
@@ -36,8 +36,8 @@ PRE LOADER
     height: 60px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    background-image: url(../images/preloading.gif);
+    top: 50%; /* transform: translate3d(-50%, -50%, 10px); */
+    /* background-image: url(../images/preloading.gif); */
     background-repeat: no-repeat;
     background-position: center;
     -moz-background-size: cover;
@@ -473,6 +473,11 @@ textarea::-ms-input-placeholder
     margin-top:240px;
     color:#fff;
 }
+
+/* .home-content {
+    transition: all 0.1s ease-out 0s;
+} */
+
 .home-content h1{
     font-size:45px;
     text-transform:uppercase;
