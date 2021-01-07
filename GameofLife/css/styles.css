@@ -4,6 +4,7 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1024px;
+    padding: 0 20px;
 }
 
 header {
@@ -247,5 +248,8 @@ div.header-text{
 @media (max-width: 767px) {
     .letter {
         font-size: 6em;
+    }
+    .container .banner .presets .preset {
+        font-size: 40px;
     }
 }
