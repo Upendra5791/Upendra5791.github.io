@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #222222;
+}
+
+.container .banner {
+    background-color: rgb(238, 110, 115);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px 50px 5px 50px;
+    color: #fff;
+    box-shadow: #985659 4px 4px 3px 0px;
+    line-height: 1.2;
+    font-family: 'FontAwesome';
+}
+
+.container .grid {
+    margin: 0 auto;
+    width: 960px;
+    background-color: #e69696;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .presets a {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+.container .presets a:hover {
+    transform: scale(1.2);
+    text-shadow: 2px 1px 3px #9c1e2f;
+}
+
+.container .grid div {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #424242;
+    font-size: 5px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 2px;;
+}
+
+.container .grid .live {
+    background-color: #a4eeff;
+}
+
+.container .banner a,
+.container .banner a:hover,
+.container .banner a:focus {
+    color: #fff;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    background: #222222;
+    font-family: 'FontAwesome';
+}
+
+
+/* HELPER CLASSES */
+.text-center {
+    text-align: center;
+}
+
+.mx-medium {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+ /* button css */
+
+.container .btn-container .btn {
+    width: 150px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: inline-flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.container .btn-container .btn.clear {
+    box-shadow: 0 0 40px 40px #e74c3c inset, 0 0 0 0 #e74c3c;
+    border-color: #e74c3c;
+}
+.container .btn-container .btn.clear:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset, 0 0 0 0 #e74c3c;
+    border-color: #e74c3c;
+    box-shadow: 0 0 10px 0 #e74c3c inset, 0 0 10px 4px #e74c3c;
+    color: #e74c3c;
+}
+.container .btn-container .btn:hover {
+    outline: 0;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    color: #3498db;
+  }
+  .container .btn-container .btn:focus {
+    outline: 0;
+  }
+
+  /* Footer Social Icons */
+  
+.main-footer .social{
+    margin-bottom:10px;
+}
+.main-footer .social a{
+    color:#c3bec2;
+    font-size:30px;
+}
+.main-footer .social a:hover{
+    color:rgb(238, 110, 115);
+}
+.main-footer .social a i{
+    border-right:1px solid #c3bec2;
+    padding:0 10px 0 10px;
+}
+.main-footer .social a i.fa-github{
+    border-right:0;
+}
+.main-footer p,
+.main-footer a{
+    color:#c3bec2;
+    font-size:15px;	
+}
+
+/* Header Text CSS */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+/* *, *:before, *:after{
+  box-sizing:border-box;
+} */
+body{
+  font-family: 'Lato', sans-serif;
+    ;
+}
+div.header-text{
+  margin: 0 auto;
+  text-align: center;
+}
+.header-text div {
+    display: inline-block;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 8em;
+  position: relative;
+  color: rgb(238, 110, 115);
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
+@media (max-width: 767px) {
+    .letter {
+        font-size: 6em;
+    }
+}

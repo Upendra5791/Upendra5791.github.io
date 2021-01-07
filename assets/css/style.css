@@ -778,7 +778,8 @@ textarea::-ms-input-placeholder
 .main-footer .social a i.fa-github{
     border-right:0;
 }
-.main-footer p{
+.main-footer p,
+.main-footer a{
     color:#c3bec2;
     font-size:12px;	
 }

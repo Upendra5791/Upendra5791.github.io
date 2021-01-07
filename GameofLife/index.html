@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Game of Life</title>
+    <meta name="description" content="Conway's Game of Life">
+    <meta name="author" content="Upendra">
+    <link rel="manifest" href="gol.webmanifest" />
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/plugins.css" />
+</head>
+
+<body>
+
+    <header>
+        <!-- <h1 class="text-center">Game of Life</h1> -->
+        <div class="header-text">
+            <div>
+            <span class="letter" data-letter="G">G</span>
+            <span class="letter" data-letter="A">A</span>
+            <span class="letter" data-letter="M">M</span>
+            <span class="letter" data-letter="E">E</span></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+            <span class="letter" data-letter="O">O</span>
+            <span class="letter" data-letter="F">F</span>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+            <span class="letter" data-letter="L">L</span>
+            <span class="letter" data-letter="I">I</span>
+            <span class="letter" data-letter="F">F</span>
+            <span class="letter" data-letter="E">E</span>
+            </div>
+          </div>
+    </header>
+    <div class="container">
+        <div class="banner mx-medium text-center">
+            <p>Welcome to the game of life. <br />
+                Choose from the presets below and start the Game of Life or place some cells on the board as you wish
+                and Start the Game of Life. </p>
+        </div>
+        <div class="banner mx-medium">
+            <div class="presets row">
+                <div class="col-4 text-center">
+                    <a id="preset-1" class="preset">Oscillator 1</a><a id="preset-2" class="preset">Oscillator 2</a><a
+                        id="preset-3" class="preset">Oscillator 3</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a id="preset-4" class="preset">Dissapearing Lines</a><a id="preset-5" class="preset">Stairway to
+                        Heaven</a><a id="preset-6" class="preset">DNA</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a id="preset-7" class="preset">Cross Gliders</a><a id="preset-8" class="preset">Gliding
+                        Spaceship</a><a id="preset-9" class="preset">Bleeding Heart</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container mx-medium text-center">
+            <button class="btn start">Start</button>
+            <button class="btn clear">Clear</button>
+        </div>
+        <div class="grid"></div>
+        <div class="banner mx-medium">
+            <p>
+                The Game of Life, also known simply as Life, is a cellular automaton devised by the British
+                mathematician John Horton Conway in 1970.[1] It is a zero-player game, meaning that its evolution is
+                determined by its initial state, requiring no further input. One interacts with the Game of Life by
+                creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a
+                universal constructor or any other Turing machine.
+                To know more about the Game of Life
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">click here</a>.
+            </p>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="text-center">
+            <div class="">
+                <div class="">
+                    <div class="main-footer">
+
+                        <div class="social">
+                            <a href="https://twitter.com/Upendra_chhetri" target="_blank"><i
+                                    class="fa fa-twitter"></i></a>
+                            <a href="https://linkedin.com/in/upendra-chhetri-3a4132118" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/upenz/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://github.com/Upendra5791" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+
+                        <p>“Website without visitors is like a ship lost in the horizon.” <br />
+                            ― Dr. Christopher Dayagdag</p>
+
+                        <div>
+                            <p>Check out my profile <a target="_blank" href="https://upendra5791.github.io/">here</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
