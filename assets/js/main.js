@@ -3,16 +3,23 @@
 
 jQuery(document).ready(function ($) {
 
-	$(window).load(function () {
-		$(".loaded").fadeOut();
-		$(".preloader").delay(1000).fadeOut("slow");
+    $(window).load(function () {
+        $(".loaded").fadeOut();
+        $(".preloader").delay(1000).fadeOut("slow");
+        // register service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('sw.js')
+                .then(reg => console.log('SW Registered!'))
+                .catch(err => console.log('Error regitering SW!'))
+        }
     });
-    
+
     $(document).on('scroll', function (event) {
-        const percVal = window.scrollY/800;
+        const percVal = window.scrollY / 800;
         const scaleVal = 2 * percVal + 1;
         $('.home-content').css('transform', `scale(${scaleVal})`);
-    });       
+    });
 
 
     /*---------------------------------------------*
@@ -71,9 +78,9 @@ jQuery(document).ready(function ($) {
 
     function set_clip_property() {
         var $header_height = $('.cd-header').height(),
-                $window_height = $(window).height(),
-                $header_top = $window_height - $header_height,
-                $window_width = $(window).width();
+            $window_height = $(window).height(),
+            $header_top = $window_height - $header_height,
+            $window_width = $(window).width();
         $('.cd-blurred-bg').css('clip', 'rect(' + $header_top + 'px, ' + $window_width + 'px, ' + $window_height + 'px, 0px)');
     }
     $('#main-nav a[href^="#"]').on('click', function (event) {
@@ -83,9 +90,9 @@ jQuery(document).ready(function ($) {
         $('#main-nav').removeClass('is-visible');
         $('.cd-shadow-layer').removeClass('is-visible');
         $('body,html').animate(
-                {'scrollTop': target.offset().top},
-        900
-                );
+            { 'scrollTop': target.offset().top },
+            900
+        );
     });
 
 
@@ -93,7 +100,7 @@ jQuery(document).ready(function ($) {
      * STICKY scroll
      ---------------------------------------------*/
 
-//    $.localScroll();
+    //    $.localScroll();
 
 
 
@@ -101,10 +108,10 @@ jQuery(document).ready(function ($) {
      * Counter 
      ---------------------------------------------*/
 
-//    $('.statistic-counter').counterUp({
-//        delay: 10,
-//        time: 2000
-//    });
+    //    $('.statistic-counter').counterUp({
+    //        delay: 10,
+    //        time: 2000
+    //    });
 
 
 
@@ -113,25 +120,25 @@ jQuery(document).ready(function ($) {
      * WOW
      ---------------------------------------------*/
 
-//        var wow = new WOW({
-//            mobile: false // trigger animations on mobile devices (default is true)
-//        });
-//        wow.init();
+    //        var wow = new WOW({
+    //            mobile: false // trigger animations on mobile devices (default is true)
+    //        });
+    //        wow.init();
 
 
     /* ---------------------------------------------------------------------
      Carousel
      ---------------------------------------------------------------------= */
 
-//    $('.testimonials').owlCarousel({
-//        responsiveClass: true,
-//        autoplay: false,
-//        items: 1,
-//        loop: true,
-//        dots: true,
-//        autoplayHoverPause: true
-//
-//    });
+    //    $('.testimonials').owlCarousel({
+    //        responsiveClass: true,
+    //        autoplay: false,
+    //        items: 1,
+    //        loop: true,
+    //        dots: true,
+    //        autoplayHoverPause: true
+    //
+    //    });
 
 
     //End
