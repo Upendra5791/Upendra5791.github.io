@@ -1107,3 +1107,7 @@ Main components
     -moz-transition-delay: 0s;
     transition-delay: 0s;
 }
+
+.external-links a:hover {
+    color:#ff2b4a;
+}
