@@ -1,6 +1,6 @@
 {
-  "short_name": "3n+1",
-  "name": "Visualization app for Collatz Conjecture",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
