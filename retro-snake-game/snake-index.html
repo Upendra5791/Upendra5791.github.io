@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Retro Snake Game</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .container .option {
+        height: 100px;
+        width: 200px;
+        padding: 10px;
+        display: grid;
+        place-content: center;
+        margin: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        background: rgb(131, 58, 180);
+        color: #fff;
+        font-size: 18px;
+        transition: 0.2s ease-in;
+        text-decoration: none;
+    }
+
+    .container .option.angular {
+        background: linear-gradient(45deg, rgba(131, 58, 180, 1) 0%, rgb(165 84 84) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+
+    .container .option.react {
+        background: linear-gradient(215deg, rgba(131, 58, 180, 1) 0%, rgb(165 84 84) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+
+    .container .option:hover {
+        transform: scale(1.015);
+        box-shadow: -1px 2px 8px 1px #ccc;
+    }
+
+    .profile {
+        position: fixed;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container">
+        <a href="./RetroSnakeAngular/index.html" class="angular option">Open Angular version</a>
+        <a href="./RetroSnakeReact/index.html" class="react option">Open React version</a>
+    </div>
+    <p class="profile">Check out my profile <a target="_blank" href="https://upendra5791.github.io/">here</a>.</p>
+</body>
+
+</html>
