@@ -5,14 +5,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Retro Snake Game</title>
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./plugin.css">
 </head>
 
 <style>
+    body {
+        background-color: rgb(56, 55, 55);
+        margin: 0;
+    }
     .container {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-around;
+        align-items: center;
+        min-height: 50vh;
     }
 
     .container .option {
@@ -41,7 +49,7 @@
 
     .container .option:hover {
         transform: scale(1.015);
-        box-shadow: -1px 2px 8px 1px #ccc;
+        box-shadow: -1px 2px 8px 1px #323232;
     }
 
     .profile {
@@ -57,7 +65,47 @@
         <a href="./RetroSnakeAngular/index.html" class="angular option">Open Angular version</a>
         <a href="./RetroSnakeReact/index.html" class="react option">Open React version</a>
     </div>
-    <p class="profile">Check out my profile <a target="_blank" href="https://upendra5791.github.io/">here</a>.</p>
+    <!-- <p class="profile">Check out my profile <a target="_blank" href="https://upendra5791.github.io/">here</a>.</p> -->
 </body>
+
+<footer id="footer" class="footer">
+    <div class="text-center">
+
+        <div class="row projects">
+            <p>Check out some of my other projects:</p>
+            <div class="external-links">
+                <div class="col1">
+                    <a target="_blank" href="https://upendra5791.github.io/SmartWatch/index.html">Smart Watch</a>
+                    <a target="_blank" href="https://upendra5791.github.io/TicTacToe/index.html">TicTacToe</a>
+                    <a target="_blank" href="https://upendra5791.github.io/retro-snake-game/snake-index.html">Retro Snake Game</a>
+                </div>
+                <div class="col1">
+                    <a target="_blank" href="https://upendra5791.github.io/SpaceInvader/index.html">Space Invader</a>
+                    <a target="_blank" href="https://upendra5791.github.io/CollatzConjecture/index.html">Collatz Conjecture Visualisation</a>
+                    <a target="_blank" href="https://upendra5791.github.io/GameofLife/index.html">Game of Life</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                <div class="main-footer">
+
+                    <div class="social">
+                        <a href="https://twitter.com/Upendra_chhetri" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/upendra-chhetri-3a4132118" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/upenz/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://github.com/Upendra5791" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+
+                    <p>“Website without visitors is like a ship lost in the horizon.” <br />
+                        ― Dr. Christopher Dayagdag</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
 
 </html>

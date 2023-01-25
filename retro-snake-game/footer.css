@@ -1,0 +1,65 @@
+.footer {
+    padding-top:50px;
+    padding-bottom:50px;
+    background:#222222;
+    margin-top: 50px;
+    text-align: center;
+    color: #c3bec2;
+}
+
+.footer .projects {
+    margin: 30px;
+}
+
+.footer .projects  .external-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .projects  .external-links .col1{
+    display: flex;
+    flex-direction: column;
+}
+.footer .projects  .external-links a {
+    padding: 10px 5px;
+}
+
+.footer .projects a {
+    color: #c3bec2;
+    text-decoration: none;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.footer .projects a:hover {
+    color: #ff2b4a;
+    text-decoration: none;
+}
+
+
+
+/* For Footer Area */
+
+.main-footer .social{
+    margin-bottom:10px;
+}
+.main-footer .social a{
+    color:#c3bec2;
+    font-size:30px;
+}
+.main-footer .social a:hover{
+    color:#ff2b4a;
+}
+.main-footer .social a i{
+    border-right:1px solid #c3bec2;
+    padding:0 10px 0 10px;
+}
+.main-footer .social a i.fa-github{
+    border-right:0;
+}
+.main-footer p,
+.main-footer a{
+    color:#c3bec2;
+    font-size:12px;	
+}
