@@ -13,15 +13,18 @@ jQuery(document).ready(function ($) {
                 .then(reg => console.log('SW Registered!'))
                 .catch(err => console.log('Error regitering SW!'))
         }
+        setFeaturesWidth();
     });
 
     $(document).on('scroll', function (event) {
         const percVal = window.scrollY / 800;
         const scaleVal = 2 * percVal + 1;
         $('.home-content').css('transform', `scale(${scaleVal})`);
+
+        setFeaturesWidth();
     });
 
-
+    
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
@@ -75,6 +78,33 @@ jQuery(document).ready(function ($) {
     $(window).on('resize', function () {
         set_clip_property();
     });
+
+    function isElementInView(element, fullyInView) {
+        var pageTop = $(window).scrollTop();
+        var pageBottom = pageTop + $(window).height();
+        var elementTop = $(element).offset().top;
+        var elementBottom = elementTop + $(element).height();
+
+        if (fullyInView === true) {
+            return ((pageTop < elementTop) && (pageBottom > elementBottom));
+        } else {
+            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+        }
+    }
+
+    function setFeaturesWidth() {
+        if (isElementInView($('#features'), false)) {
+            $('.skills-container .bar-fill').each(function(i, element) {
+                if (!$(element).data().widthSet) {
+                    $(element).stop().animate({
+                        width: element.dataset.width + '%',
+                        duration:"slow"                 
+                    });
+                    $(element).data().widthSet = true;
+                }
+            });
+        }
+    }
 
     function set_clip_property() {
         var $header_height = $('.cd-header').height(),
