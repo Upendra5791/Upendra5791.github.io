@@ -626,7 +626,7 @@ textarea::-ms-input-placeholder
 /*For Experience Section*/
 
 .experience{
-    background: url(../images/city.jpg) no-repeat center top fixed;
+    background: url(../images/background-2.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -714,7 +714,7 @@ textarea::-ms-input-placeholder
 /*For Contact Section*/
 
 .contact{
-    background: url(../images/contact2.jpg) no-repeat center top fixed;
+    background: url(../images/background-3.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -789,15 +789,21 @@ textarea::-ms-input-placeholder
 
 .footer .projects  .external-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer .projects  .external-links .col1{
     display: flex;
     flex-direction: column;
+    width: 33%;
+    min-width: 150px;
 }
 .footer .projects  .external-links a {
     padding: 10px 5px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
 }
 
 
