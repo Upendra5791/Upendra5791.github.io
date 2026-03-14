@@ -1,0 +1,161 @@
+
+
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 15px;
+    }
+	.home-content h1 {
+    font-size: 48px;
+	}
+	.home-content p {
+    font-size: 21px;
+	}
+	.portfolio-wrapper2 .portfolio-item.width-img {
+    height: 198px;
+	}
+    
+
+}
+
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+    html {
+        font-size: 80%;
+    }
+	.about-content h4 {
+    font-size: 14px;
+	}
+	
+	.contact-area {
+    padding: 60px 40px 124px 40px;
+	}
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    html {
+        font-size: 70%;
+    }
+	.home-content h1 {
+    font-size: 46px;
+	}
+	.home-content p {
+    font-size: 20px;
+	}
+	.about-content a {
+    margin-bottom: 20px;
+	}
+	.experience-content {
+    margin-bottom: 20px;
+	}
+	
+	.contact-area {
+    margin-bottom: 20px;
+	}
+	.features-bg {
+    margin: 0 auto;
+    margin-bottom: 20px;
+	}
+	.about-content h4 {
+		font-size: 18px;
+		text-align: center;
+		line-height: 1.3;
+	}
+	.about-content p {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	.skills-container {
+		margin: 0 20px;
+	}
+	.experience-content .content-details h5 {
+	font-size: 16px;
+	}
+	.experience-content .content-details p {
+	font-size: 14px;
+	line-height: 1.2;
+	}
+
+}
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    html {
+        font-size: 60%;
+    }
+	.home-content h1 {
+    font-size: 25px;
+	}
+	.home-content p {
+    font-size: 20px;
+	}
+	.heading-content h3 {
+    font-size: 30px;
+	}
+	.sections {
+		padding-top: 50px;
+		padding-top: 70px;
+	}
+	.experience-content h4 {
+    font-size: 20px;
+	}
+	.experience-content {
+	padding: 40px 20px;
+	}
+   .experience-content .content-details h5 {
+    font-size: 16px;
+	}
+	.experience-content .content-details p {
+	font-size: 14px;
+	line-height: 1.2;
+	}
+	.testimonial-content .testimonial-quote p {
+    font-size: 12px;
+	}
+	.contact-wrapper h4 {
+    font-size: 18px;
+	}
+	.cd-header {
+    top: 3%;
+	}
+	.contact-details p {
+	font-size: 14px;
+	line-height: 1.2;
+	}	
+	#main-nav li a {
+	font-size: 2rem;
+	}
+
+}
+
+
+
+@media (max-width: 320px) {
+
+
+    html {
+        font-size: 50%;
+    }
+	.cd-header {
+    top: 3%;
+	}
+	.overlay {
+    min-height: 500px;
+	}
+	.home-wrapper {
+    margin-top: 115px;
+	}
+	.skills-container .bar .title {
+	padding: 7px 0;
+	font-size: 12px;
+	width: 80px;
+	}
+	.skills-container .bar span {
+	font-size: 14px;
+	}
+}
+
